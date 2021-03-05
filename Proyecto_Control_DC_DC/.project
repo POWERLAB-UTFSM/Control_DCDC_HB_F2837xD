@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>Proyecto_Control_DC_DC</name>
+	<name>Comm_FLASH</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -28,27 +28,27 @@
 		<link>
 			<name>F2837xD_Adc.c</name>
 			<type>1</type>
-			<locationURI>COM_TI_C2000WARE_SOFTWARE_PACKAGE_INSTALL_DIR/device_support/f2837xd/common/source/F2837xD_Adc.c</locationURI>
+			<locationURI>$%7BCOM_TI_C2000WARE_SOFTWARE_PACKAGE_INSTALL_DIR%7D/device_support/f2837xd/common/source/F2837xD_Adc.c</locationURI>
 		</link>
 		<link>
 			<name>F2837xD_CodeStartBranch.asm</name>
 			<type>1</type>
-			<locationURI>COM_TI_C2000WARE_SOFTWARE_PACKAGE_INSTALL_DIR/device_support/f2837xd/common/source/F2837xD_CodeStartBranch.asm</locationURI>
+			<locationURI>$%7BCOM_TI_C2000WARE_SOFTWARE_PACKAGE_INSTALL_DIR%7D/device_support/f2837xd/common/source/F2837xD_CodeStartBranch.asm</locationURI>
 		</link>
 		<link>
 			<name>F2837xD_DefaultISR.c</name>
 			<type>1</type>
-			<locationURI>COM_TI_C2000WARE_SOFTWARE_PACKAGE_INSTALL_DIR/device_support/f2837xd/common/source/F2837xD_DefaultISR.c</locationURI>
+			<locationURI>$%7BCOM_TI_C2000WARE_SOFTWARE_PACKAGE_INSTALL_DIR%7D/device_support/f2837xd/common/source/F2837xD_DefaultISR.c</locationURI>
 		</link>
 		<link>
 			<name>F2837xD_GlobalVariableDefs.c</name>
 			<type>1</type>
-			<locationURI>COM_TI_C2000WARE_SOFTWARE_PACKAGE_INSTALL_DIR/device_support/f2837xd/headers/source/F2837xD_GlobalVariableDefs.c</locationURI>
+			<locationURI>$%7BCOM_TI_C2000WARE_SOFTWARE_PACKAGE_INSTALL_DIR%7D/device_support/f2837xd/headers/source/F2837xD_GlobalVariableDefs.c</locationURI>
 		</link>
 		<link>
 			<name>F2837xD_Gpio.c</name>
 			<type>1</type>
-			<locationURI>COM_TI_C2000WARE_SOFTWARE_PACKAGE_INSTALL_DIR/device_support/f2837xd/common/source/F2837xD_Gpio.c</locationURI>
+			<locationURI>$%7BCOM_TI_C2000WARE_SOFTWARE_PACKAGE_INSTALL_DIR%7D/device_support/f2837xd/common/source/F2837xD_Gpio.c</locationURI>
 		</link>
 		<link>
 			<name>F2837xD_Headers_nonBIOS_cpu1.cmd</name>
@@ -58,27 +58,37 @@
 		<link>
 			<name>F2837xD_Ipc.c</name>
 			<type>1</type>
-			<locationURI>COM_TI_C2000WARE_SOFTWARE_PACKAGE_INSTALL_DIR/device_support/f2837xd/common/source/F2837xD_Ipc.c</locationURI>
+			<locationURI>$%7BCOM_TI_C2000WARE_SOFTWARE_PACKAGE_INSTALL_DIR%7D/device_support/f2837xd/common/source/F2837xD_Ipc.c</locationURI>
 		</link>
 		<link>
 			<name>F2837xD_PieCtrl.c</name>
 			<type>1</type>
-			<locationURI>COM_TI_C2000WARE_SOFTWARE_PACKAGE_INSTALL_DIR/device_support/f2837xd/common/source/F2837xD_PieCtrl.c</locationURI>
+			<locationURI>$%7BCOM_TI_C2000WARE_SOFTWARE_PACKAGE_INSTALL_DIR%7D/device_support/f2837xd/common/source/F2837xD_PieCtrl.c</locationURI>
 		</link>
 		<link>
 			<name>F2837xD_PieVect.c</name>
 			<type>1</type>
-			<locationURI>COM_TI_C2000WARE_SOFTWARE_PACKAGE_INSTALL_DIR/device_support/f2837xd/common/source/F2837xD_PieVect.c</locationURI>
+			<locationURI>$%7BCOM_TI_C2000WARE_SOFTWARE_PACKAGE_INSTALL_DIR%7D/device_support/f2837xd/common/source/F2837xD_PieVect.c</locationURI>
 		</link>
 		<link>
 			<name>F2837xD_SysCtrl.c</name>
 			<type>1</type>
-			<locationURI>COM_TI_C2000WARE_SOFTWARE_PACKAGE_INSTALL_DIR/device_support/f2837xd/common/source/F2837xD_SysCtrl.c</locationURI>
+			<locationURI>$%7BCOM_TI_C2000WARE_SOFTWARE_PACKAGE_INSTALL_DIR%7D/device_support/f2837xd/common/source/F2837xD_SysCtrl.c</locationURI>
 		</link>
 		<link>
 			<name>F2837xD_usDelay.asm</name>
 			<type>1</type>
-			<locationURI>COM_TI_C2000WARE_SOFTWARE_PACKAGE_INSTALL_DIR/device_support/f2837xd/common/source/F2837xD_usDelay.asm</locationURI>
+			<locationURI>$%7BCOM_TI_C2000WARE_SOFTWARE_PACKAGE_INSTALL_DIR%7D/device_support/f2837xd/common/source/F2837xD_usDelay.asm</locationURI>
 		</link>
 	</linkedResources>
+	<variableList>
+		<variable>
+			<name>copy_PARENT</name>
+			<value>$%7BPARENT-1-CCS_INSTALL_ROOT%7D/C2000Ware_3_02_00_00_Software/device_support/f2837xd</value>
+		</variable>
+		<variable>
+			<name>copy_PARENT1</name>
+			<value>$%7Bcopy_PARENT%7D/examples/cpu1/cla_iir2p2z/cpu01</value>
+		</variable>
+	</variableList>
 </projectDescription>

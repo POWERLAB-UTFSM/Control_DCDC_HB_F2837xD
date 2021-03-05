@@ -67,7 +67,6 @@ main.obj: D:/TI/C2000Ware_3_04_00_00_Software/device_support/f2837xd/common/incl
 main.obj: D:/TI/C2000Ware_3_04_00_00_Software/device_support/f2837xd/common/include/F2837xD_SysCtrl_defines.h
 main.obj: D:/TI/C2000Ware_3_04_00_00_Software/device_support/f2837xd/common/include/F2837xD_Upp_defines.h
 main.obj: D:/TI/C2000Ware_3_04_00_00_Software/device_support/f2837xd/common/include/F2837xD_defaultisr.h
-main.obj: ../task_file.h
 
 ../main.c: 
 D:/TI/C2000Ware_3_04_00_00_Software/device_support/f2837xd/common/include/F28x_Project.h: 
@@ -136,4 +135,3 @@ D:/TI/C2000Ware_3_04_00_00_Software/device_support/f2837xd/common/include/F2837x
 D:/TI/C2000Ware_3_04_00_00_Software/device_support/f2837xd/common/include/F2837xD_SysCtrl_defines.h: 
 D:/TI/C2000Ware_3_04_00_00_Software/device_support/f2837xd/common/include/F2837xD_Upp_defines.h: 
 D:/TI/C2000Ware_3_04_00_00_Software/device_support/f2837xd/common/include/F2837xD_defaultisr.h: 
-../task_file.h: 

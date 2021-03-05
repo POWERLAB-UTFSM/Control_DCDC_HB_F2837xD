@@ -1,0 +1,106 @@
+/*
+ * task.cla
+ *
+ *  Created on: 09-09-2020
+ *      Author: Seba
+ */
+
+//
+// Included Files
+//
+
+#include "task_file.h"
+#include <stdint.h>
+//#include <CLAmath.h>
+
+//
+//Task 1
+__interrupt void Cla1Task1 (void) // Modo Normal
+{
+   __mdebugstop();
+
+//-----------Definicion-Variables------------//
+
+    float Ref, I_out, V_out, V_Cond;
+    float e_int, u_int, e_ext, u_ext;
+    float salida, AmpRamp2;
+
+//------------Lectura-de-variables-----------//
+    Ref = 75;
+    I_out = (float)AdcdResultRegs.ADCRESULT0*ADC_I;   //
+    I_out = (float)AdcdResultRegs.ADCRESULT0*ADC_V;
+    V_Cond = (float)AdcdResultRegs.ADCRESULT2*ADC_VC;
+
+//------------Lazo-Externo-----------//
+    e_ext = Ref - I_out;
+    u_ext = A_ext*e_ext - B_ext*e_ant_ext_cpu + u_ant_ext_cpu;
+
+    if (u_ext > Lim_sup_ext)
+    {
+        u_ext = Lim_sup_ext;}
+    else if (u_ext < Lim_inf_ext)
+    {
+        u_ext = Lim_inf_ext;}
+//------------Lazo-Interno-----------//
+    e_int = Ref - V_out;
+    u_int = A_int*e_int - B_int*e_ant_int_cpu + u_ant_int_cpu;
+
+    if (u_int > Lim_sup_int)
+    {
+        u_int = Lim_sup_int;}
+    else if (u_int < Lim_inf_int)
+    {
+        u_int = Lim_inf_int;}
+
+// Actualización de Registros
+
+    e_ant_int_cla = e_int;
+    u_ant_int_cla = u_int;
+    e_ant_ext_cla = e_ext;
+    u_ant_ext_cla = u_ext;
+
+
+// Acondicionamiento para la Salida
+    salida = u_int*N;
+    AmpRamp2 = DAC_I*salida;
+
+    Cmpss1Regs.RAMPMAXREFS = ((int)AmpRamp2 << 4) | 0x0;
+
+}
+
+__interrupt void Cla1Task2 (void) // Sync_PLL
+{
+}
+
+__interrupt void Cla1Task3 (void)
+{
+
+}
+
+__interrupt void Cla1Task4 (void)
+{
+
+}
+
+__interrupt void Cla1Task5 (void)
+{
+
+}
+
+__interrupt void Cla1Task6 (void)
+{
+
+}
+
+__interrupt void Cla1Task7 (void) // Normal mode
+{
+}
+
+__interrupt void Cla1Task8 (void)
+{
+}
+//
+// End of file
+//
+
+
